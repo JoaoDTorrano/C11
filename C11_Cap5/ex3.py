@@ -16,6 +16,8 @@ print(paises_oceania)
 print('Número de países da Oceania:', paises_oceania.count())
 
 #2)
+(print(ds.nlargest(1, ['Population'])[['Region', 'Country']]))
+
 
 
 
