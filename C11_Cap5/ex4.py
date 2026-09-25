@@ -21,3 +21,6 @@ meta.name = 'Infant mortality goal (-15%)'
 comparacao = pd.concat([original, meta], axis=1)
 print(comparacao)
 
+#8)
+paises_v3 = ds.drop(columns=['Coastline (coast/area ratio)'])
+paises_v3.to_csv('paises_sem_coastline.csv', index = False)
