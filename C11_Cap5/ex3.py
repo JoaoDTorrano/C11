@@ -18,6 +18,8 @@ print('Número de países da Oceania:', paises_oceania.count())
 #2)
 (print(ds.nlargest(1, ['Population'])[['Region', 'Country']]))
 
-
+#3)
+paises_regiao = ds.groupby('Region')
+print(paises_regiao['Literacy (%)'].sum() / paises_regiao['Literacy (%)'].count())
 
 
